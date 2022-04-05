@@ -495,19 +495,16 @@ footer li{
 
 .sectionA-cate{
     grid-area: sectionA-cate;
-    background-image: url(images/carruseles/carnes.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
 }
 
+.sectionA-cate img{
+    width: 100%;
+}
 
 .sectionA-cate h2{
     text-align: center;
     font-size: 400%;
-    background-color: rgba(247,187,235,0.8);
+    margin-bottom: 10px;
     color: black;
 }
 

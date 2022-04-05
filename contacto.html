@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="estilos.css">
+
+    <title>Contacto</title>
+</head>
+<body>
+    <div class="contenedor_forms">
+        <header>
+            <img src="/images/logo.png" alt="">
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="recetas.html">RECETAS</a></li>
+                <li><a href="consejos.html">CONSEJOS&TRUCOS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+            <div></div>
+        </header>
+
+        <section class="titulo_forms">
+            <h1>CONTACTO</h1>
+            <p>Envianos tu mensaje por email. También podes escribirnos por nuestras redes sociales o por Whatsapp.</p>
+        </section>
+
+        <section class="left">
+            <div class="pictureContainer" id="r1">
+                <a href="wa.me">
+                    <img src="images/redes/tele.png" alt="">
+                </a>
+            </div>
+            <div class="pictureContainer" id="r2">
+                <a href="tiktok.com"><p><img src="images/redes/tikk.png" alt=""></a>
+            </div>
+            <div class="pictureContainer" id="r3">
+                <a href="instagram.com"><p><img src="images/redes/ig.png" alt=""></a>
+            </div>
+            <div class="pictureContainer" id="r4">
+                <a href="facebook.com"><p><img src="images/redes/facebb.png" alt=""></a>
+            </div>
+            <div class="pictureContainer" id="r5">
+                <a href="gmail.com"><img src="images/redes/prueba.png" alt=""></a>
+            </div>
+        </section>
+
+        <section class="right">
+            <form action="form.php" method="post" class="contacto_form">
+                <div class="form-row">
+                    <label for="name">Nombre*</label>
+                    <input type="text" id="name" placeholder="Ej: Martina" name="nombre" required>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" placeholder="Ej: martina@gmail.com" name="email" required>
+                </div>
+                <div class="form-row">
+                    <label for="telefono">Teléfono (opcional)</label>
+                    <input type="tel" name="telefono" id="telefono" placeholder="Ej: +54911-1234-5678">
+                </div>
+                <div class="form-row">
+                    <label for="abstract">Mensaje*</label>
+                    <textarea name="textarea" id="abstract" placeholder="Escribí tu mensaje" required></textarea>
+                </div>
+                <div class="form-row">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+        <footer>
+            <img src="images/logo.png" alt="" class="logo-footer">
+            <div></div>
+            <ul class="redes">
+                <li><a href=""><img src="images/redes/whatsapp.png" alt=""></a></li>
+                <li><a href=""><img src="images/redes/tiktok.png" alt=""></a></li>
+                <li><a href=""><img src="images/redes/instagram.png" alt=""></a></li>
+                <li><a href=""><img src="images/redes/facebook.png" alt=""></a></li>
+                <li><a href=""><img src="images/redes/email.png" alt=""></a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>

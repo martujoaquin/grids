@@ -1,0 +1,637 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+/* INDEX */
+/* GRID AREAS */
+.contenedor{
+    display: grid;
+    grid-template-rows: 5% 50% 40% 5%;    
+    grid-template-columns: 65% 35%;
+    grid-template-areas: 
+    "header header"
+    "sectionA sectionB"
+    "sectionA sectionC"
+    "footer footer";
+}
+header{
+    background-color: #fcf2db;
+    grid-area: header;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+header ul{
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+header li{
+    display: inline;
+    margin-right: 10px;
+}
+header a{
+    color: black;
+    font-size: x-large;
+    margin: 1%;
+}
+header a:hover{
+    background-color: white;
+    color: grey;
+}
+
+.sectionA{
+    border-right: #fcf2db 4px solid;
+    grid-area: sectionA;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 40% 60%;
+    grid-template-areas: 
+    "titulo titulo"
+    "foto receta";
+}
+.sectionA h1{
+    text-align: center;
+    font-size: 500%;
+    margin: 10px;
+    grid-area: titulo;
+}
+.sectionA img{
+    width: 70%;
+    margin: 10px;
+}
+.sectionA h4{
+    font-size: xx-large;
+    text-align: center;
+}
+.caja{
+    margin: 3% 5% 5% 5%;
+    border: gray 2px solid;
+    padding-bottom: 7%;
+}
+.sectionA h5{
+    font-size: x-large;
+    text-align: center;
+    padding-top: 2%;
+}
+.sectionA ul{
+    padding-top: 5%;
+    list-style-type: none;
+}
+.sectionA li{
+    margin: 8%;
+    padding: 2%;
+}
+.sectionA a{
+    margin-left: 5%;
+    text-decoration: underline;
+}
+.sectionB{
+    grid-area: sectionB;
+    border-bottom: #fcf2db 4px solid;
+    display: flex;
+    flex-direction: column;   
+    justify-content: space-around;
+}
+.sectionB img{
+    width: 30%;
+    margin: 10px;
+}
+.quesos{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.quesos div{
+    background-color: #c696f3;
+    border: #a04feb 3px solid;
+    width: 30%;
+    color: black;
+    text-align: center;
+    margin: 10px;
+}
+.quesos hr{
+    width: 30%;
+    border: black 1px solid;
+}
+.carnes{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.carnes div{
+    background-color: #f7bbeb;
+    border: #ee6dd4 3px solid;
+    width: 30%;
+    color: black;
+    text-align: center;
+    margin: 10px;
+}
+.carnes hr{
+    width: 30%;
+    border: black 1px solid;
+}
+.basicos{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.basicos div{
+    background-color: #a9f082;
+    border: #7ce840 3px solid;
+    width: 30%;
+    color: black;
+    text-align: center;
+    margin: 10px;
+}
+.basicos hr{
+    width: 30%;
+    border: black 1px solid;
+}
+
+.sectionC{
+    grid-area: sectionC;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.sectionC ul{
+    display: flex;
+    flex-flow: column wrap;
+    list-style-type: none;
+}
+.sectionC li{
+    text-align: center;
+    border: black 2px solid;
+    border-radius: 7px;
+    box-shadow: 3px 3px grey;
+    margin: 2%;
+    padding: 2%;
+}
+.sectionC p{
+    font-size: xx-large;
+    color: black;
+    margin: 2%;
+}
+
+footer{
+    background-color: #fcf2db;
+    grid-area: footer;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+footer ul{
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-items: flex-end;
+}
+footer li{
+    display: inline;
+}
+.redes img{
+    width: 25%;
+} 
+
+/* RECETAS */
+
+.contenedor-recetas{
+    display: grid;
+    grid-template-rows: 5% 20% 70% 5%;    
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "header"
+    "sectionA-recetas"
+    "sectionB-recetas"
+    "footer";
+}
+
+.sectionA-recetas{
+    grid-area: sectionA-recetas;
+    background-image: url(images/carruseles/comida.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.sectionA-recetas h2{
+    color: white;
+    font-size: 400%;
+}
+
+.sectionA-recetas p{
+    text-align: center;
+    font-size: x-large;
+    background-color: #f7bbeb;
+}
+.sectionB-recetas{
+    grid-area: sectionB-recetas;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "c1 c2 c3"
+    "c4 c5 c6"
+    "c7 c8 c9";
+    justify-content: space-around;
+    align-content: space-around;
+    justify-items: center;
+    align-items: center;
+}
+
+.sectionB-recetas img{
+    width: 60%;
+    border: black 2px solid;
+}
+
+.sectionB-recetas h4{
+    font-size: xx-large;
+    /* text-align: center; */
+}
+
+.c1{
+    grid-area: c1;
+    margin: 5%;
+    justify-self: center;
+}
+.c2{
+    grid-area: c2;
+    margin: 5%;
+}
+.c3{
+    grid-area: c3;
+    margin: 5%;
+}
+.c4{
+    grid-area: c4;
+    margin: 5%;
+}
+.c5{
+    grid-area: c5;
+    margin: 5%;
+}
+.c6{
+    grid-area: c6;
+    margin: 5%;
+}
+.c7{
+    grid-area: c7;
+    margin: 5%;
+}
+.c8{
+    grid-area: c8;
+    margin: 5%;
+}
+.c9{
+    grid-area: c9;
+    margin: 5%;
+}
+
+/* CONSEJOS Y TRUCOS */
+.contenedor_consejos{
+    display: grid;
+    grid-template-rows: 5% 15% 75% 5%;    
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "header"
+    "titulo_consejos"
+    "section_fotos"
+    "footer";
+}
+
+.titulo_consejos{
+    grid-area: titulo_consejos;
+}
+.titulo_consejos h1{
+    text-align: center;
+    color: black;
+    font-size: 300%;
+    margin-top: 2%;
+}
+.titulo_consejos p{
+    text-align: center;
+    font-size: x-large;
+}
+
+.consejos{
+    grid-area: section_fotos;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "f1 f2"
+    "f3 f4";
+    justify-content: center;
+    align-content: space-around;
+    justify-items: center;
+    align-items: center;
+}
+
+.consejos img{
+    width: 80%;
+    border: black 2px solid;
+}
+
+.consejos h4{
+    font-size: x-large;
+    font-weight: lighter;
+}
+
+/* CONTACTO */
+
+.contenedor_forms{
+    display: grid;
+    grid-template-rows: 5% 15% 75% 5%;    
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+    "header header"
+    "tit-contacto tit-contacto"
+    "section_left section_right"
+    "footer footer";
+}
+
+.titulo_forms{
+    grid-area: tit-contacto;
+}
+.titulo_forms h1{
+    text-align: center;
+    color: black;
+    font-size: 300%;
+    margin-top: 2%;
+}
+.titulo_forms p{
+    text-align: center;
+    font-size: x-large;
+}
+
+.left{
+    grid-area: section_left;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "r1 r2"
+    "r3 r4"
+    "r5 r5";
+    justify-items: center;
+}
+#r1{
+    grid-area: r1;
+}
+#r2{
+    grid-area: r2;
+}
+#r3{
+    grid-area: r3;
+}
+#r4{
+    grid-area: r4;
+}
+#r5{
+    grid-area: r5;
+}
+
+.pictureContainer{
+    width: 240px;
+    height: 240px;
+    overflow: hidden;
+}
+.pictureContainer img{
+    transition: transform .4s ease-in-out;
+}
+.pictureContainer img:hover{
+    transform: translate3d(0px, -240px, 0px);
+}
+
+.right{
+    grid-area: section_right;
+}
+
+.contacto_form{
+    width: 88%;
+}
+.form-row{
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row input[type="tel"]{
+    background-color: #fff;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+}
+
+.form-row label{
+    margin-bottom: 10px;
+}
+
+.form-row textarea{
+    font-size: 14px;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    padding: 7px;
+    min-height: 200px;
+    width: 100%;
+    resize: none;
+}
+.form-row button{
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #5995DA;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+.form-row button:hover{
+    background-color: #76AEED;
+}
+
+.form-row button:active{
+    background-color: #407FC7;
+}
+
+/* CATEGORÍAS */
+
+.contenedor-categorias{
+    display: grid;
+    grid-template-rows: 5% 20% 70% 5%;    
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "header"
+    "sectionA-cate"
+    "sectionB-cate"
+    "footer";
+}
+
+.sectionA-cate{
+    grid-area: sectionA-cate;
+    background-image: url(images/carruseles/carnes.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+.sectionA-cate h2{
+    text-align: center;
+    font-size: 400%;
+    background-color: rgba(247,187,235,0.8);
+    color: black;
+}
+
+.sectionB-cate{
+    grid-area: sectionB-cate;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "ca1 ca2"
+    "ca3 ca4";
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionB-cate img{
+    border: black 2px solid;
+    width: 50%;
+}
+
+.sectionB-cate h4{
+    font-size: xx-large;
+}
+
+.ca1{
+    grid-area: ca1;
+    margin: 5%;
+    justify-self: center;
+}
+.ca2{
+    grid-area: ca2;
+    margin: 5%;
+}
+.ca3{
+    grid-area: ca3;
+    margin: 5%;
+}
+.ca4{
+    grid-area: ca4;
+    margin: 5%;
+}
+
+
+/* RECETAS */
+
+.contenedor_recetas{
+    display: grid;
+    grid-template-rows: 5% 5% 25% 10% 50% 5%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "header header"
+    "tit_rec tit_rec"
+    "imag_rec imag_rec"
+    "tabla tabla"
+    "ingredientes procedimiento"
+    "footer footer";
+}
+
+.tit_rec{
+    grid-area: tit_rec;
+    text-align: center;
+    color: black;
+    font-size: 200%;
+}
+
+.imag_rec{
+    grid-area: imag_rec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imag_rec img{
+    width: 20%;
+}
+
+.tabla{
+    grid-area: tabla;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tabla table{
+    width: 50%;
+    text-align: center;
+}
+
+.ingredientes{
+    grid-area: ingredientes;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ingredientes div{
+    margin: 10px;
+}
+.ingredientes h3{
+    margin-bottom: 10px;
+    font-size: xx-large;
+}
+.ingredientes ul{
+    font-size: larger;
+}
+
+.procedimiento{
+    grid-area: procedimiento;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.procedimiento div{
+    margin: 10px;
+}
+.procedimiento h3{
+    margin-bottom: 10px;
+    font-size: xx-large;
+}
+.procedimiento ol{
+    font-size: larger;
+    font-weight: bold;
+}
+
+.procedimiento ol li span{
+    font-weight: normal;
+}

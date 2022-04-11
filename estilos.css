@@ -23,6 +23,8 @@ a{
     "footer footer";
 }
 header{
+    position: fixed;
+    width: 100%;
     background-color: #fcf2db;
     grid-area: header;
     display: flex;
@@ -189,6 +191,9 @@ header a:hover{
 }
 
 footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     background-color: #fcf2db;
     grid-area: footer;
     display: flex;
